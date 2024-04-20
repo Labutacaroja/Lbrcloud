@@ -89,21 +89,19 @@ async def gen_link(_id):
     stream_link = f"{Server.URL}dl/{_id}"
 
     if "video" in mime_type:
-        stream_text = LANG.STREAM_TEXT.format(file_name, file_size, stream_link, page_link)
+        stream_text = LANG.STREAM_TEXT.format(file_name, file_size, page_link, stream_link)
         reply_markup = InlineKeyboardMarkup(
             [
                 [InlineKeyboardButton("sᴛʀᴇᴀᴍ", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)],
-                #[InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}")],
-                [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ]
         )
     else:
-        stream_text = LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link)
+        stream_text = LANG.STREAM_TEXT_X.format(file_name, file_size, page_link, stream_link)
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)],
-                #[InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}")],
-                [InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
+                [InlineKeyboardButton("sᴛʀᴇᴀᴍ", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)],
+                [InlineKeyboardButton("ʀᴇᴠᴏᴋᴇ ғɪʟᴇ", callback_data=f"msgdelpvt_{_id}"), InlineKeyboardButton("ᴄʟᴏsᴇ", callback_data="close")]
             ]
         )
     return reply_markup, stream_text
@@ -127,10 +125,10 @@ async def gen_linkx(m:Message , _id, name: list):
             ]
         )
     else:
-        stream_text= LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link)
+        stream_text= LANG.STREAM_TEXT_X.format(file_name, file_size, stream_link, page_link)
         reply_markup = InlineKeyboardMarkup(
             [
-                [InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)]
+                [InlineKeyboardButton("sᴛʀᴇᴀᴍ", url=page_link), InlineKeyboardButton("ᴅᴏᴡɴʟᴏᴀᴅ", url=stream_link)]
             ]
         )
     return reply_markup, stream_text

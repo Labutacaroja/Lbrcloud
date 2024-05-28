@@ -24,8 +24,6 @@
 
 <i>Either you could locally host, VPS, or deploy on [Heroku](https://heroku.com)</i>
 
-#### Click on This Drop-down and get more details
-
 
 ### Deploy on Heroku
 

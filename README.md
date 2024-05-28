@@ -115,8 +115,7 @@ PORT = 8080
 </details>
 
 
-<details>
-  <summary><b>Vars and Details :</b></summary>
+<summary><b>Vars and Details :</b></summary>
 
 #### 📝 Mandatory Vars :
 
@@ -152,10 +151,7 @@ PORT = 8080
 * `NO_PORT`: (True/False) Set PORT to 80 or 443 hide port display; ignore if on Heroku. Defaults to `False`.
 * `HAS_SSL`: (can be either `True` or `False`) If you want the generated links in https format. Defaults to `False`. 
 
-</details>
-
-<details>
-  <summary><b>How to Use :</b></summary>
+<summary><b>How to Use :</b></summary>
 
 :warning: **Before using the  bot, don't forget to add the bot to the `LOG_CHANNEL` as an Admin**
  
@@ -176,6 +172,3 @@ broadcast - To Broadcast any message to all users of bot. [ADMIN]
 #### Channel Support :
 
 *Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button.*
-
-</details>
-

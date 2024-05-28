@@ -40,7 +40,7 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 <br>
 
 ```sh
-git clone https://github.com/avipatilpro/FileStreamBot
+git clone https://github.com/Tamilupdates/LinkStreamBot
 cd FileStreamBot
 python3 -m venv ./venv
 . ./venv/bin/activate
@@ -64,9 +64,11 @@ python3 -m FileStream
 <details>
   <summary><b>Deploy using Docker :</b></summary>
 <br>
-* Clone the repository:
+
+** Clone the repository:
+
 ```sh
-git clone https://github.com/avipatilpro/FileStreamBot
+git clone https://github.com/Tamilupdates/LinkStreamBot
 cd FileStreamBot
 ```
 * Build own Docker image:
@@ -171,7 +173,7 @@ status - To Get Bot Status and Total Users. [ADMIN]
 broadcast - To Broadcast any message to all users of bot. [ADMIN]
 ```
 
-#### 🍟 Channel Support :
+#### Channel Support :
 
 *Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button.*
 

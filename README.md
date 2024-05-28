@@ -32,17 +32,14 @@
 
 #### ♢ Click on This Drop-down and get more details
 
-<br>
-<details>
-  <summary><b>Deploy on Heroku (Paid)  :</b></summary>
 
-- Fork This Repo
-- Click on Deploy Easily
-- Press the below button to Fast deploy on Heroku
+### Deploy on Heroku
 
+Press the below button to fast deploy to Heroku
 
-   [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-- Go to <a href="#mandatory-vars">variables tab</a> for more info on setting up environmental variables. </details>
+- [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/LinkStreamBot)
+
+then goto the <a href="#mandatory-vars">variables tab</a> for more info on setting up environmental variables.
 
 <details>
   <summary><b>Deploy Locally :</b></summary>

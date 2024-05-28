@@ -327,25 +327,14 @@ const controls = [
 ];
 document.addEventListener('DOMContentLoaded', () => {
     const player = Plyr.setup('.player', {
-        controls,
-        autoplay: true
-    });
+            controls: controls,
+            autoplay: true
+        });
 
-    player.forEach(instance => {
-        const currentTimeElement = instance.elements.display.currentTime;
-        const durationElement = instance.elements.display.duration;
-
-        currentTimeElement.addEventListener('click', () => {
-            if (currentTimeElement.classList.contains('plyr__time--duration')) {
-                currentTimeElement.classList.remove('plyr__time--duration');
-                currentTimeElement.innerText = instance.formatTime(instance.duration - instance.currentTime);
-            } else {
-                currentTimeElement.classList.add('plyr__time--duration');
-                currentTimeElement.innerText = instance.formatTime(instance.currentTime);
-            }
+        player[0].play().catch(error => {
+            console.error('Autoplay failed:', error);
         });
     });
-});
 
 // disabling right click
 document.addEventListener("contextmenu", function (e) {
@@ -374,12 +363,31 @@ function vlc_player() {
     window.location.href = openVlc;
 }
 
-function mx_player() {
-    const openstreamlink = streamlink;
-    const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.ad;end`;
-    window.location.href = openMx;
-}
+function mx_player(streamlink) {
+    const proPackageName = 'com.mxtech.videoplayer.pro';
+    const freePackageName = 'com.mxtech.videoplayer.ad';
+    
+    // Create a hidden iframe to attempt to load the intent
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
 
+    // Attempt to open the pro version
+    const openMxPro = `intent:${streamlink}#Intent;package=${proPackageName};end`;
+    iframe.src = openMxPro;
+
+    // Set a timeout to check if the pro version failed to open
+    setTimeout(() => {
+        // If the pro version failed to open, attempt to open the free version
+        const openMxFree = `intent:${streamlink}#Intent;package=${freePackageName};end`;
+        iframe.src = openMxFree;
+
+        // Clean up by removing the iframe after use
+        setTimeout(() => {
+            document.body.removeChild(iframe);
+        }, 500);
+    }, 2000); // Adjust the timeout duration as needed
+}
 function playit_player() {
     const openstreamlink = streamlink;
     const openPlayit = `playit://playerv2/video?url=${openstreamlink}`;

@@ -311,13 +311,14 @@ if (text.length > 300) {
 // video player 
 const controls = [
     'play-large',
-    'rewind', 'play',
+    // 'rewind', 
+    'autoplay',
     'fast-forward',
     'progress',
-    'current-time', // This will show the current time
-    'duration',     // This will show the full duration
-    //'mute',
-    //'volume',
+    'current-time',
+    'duration',
+    // 'mute',
+    'volume',
     'captions',
     'settings',
     'pip',
@@ -326,10 +327,7 @@ const controls = [
     'fullscreen'
 ];
 document.addEventListener('DOMContentLoaded', () => {
-    const player = Plyr.setup('.player', {
-            controls: controls,
-            autoplay: true
-        });
+    const player = Plyr.setup('.player', { controls });
 });
 
 // disabling right click
@@ -359,36 +357,12 @@ function vlc_player() {
     window.location.href = openVlc;
 }
 
-// function mx_player() {
-//   const openstreamlink = streamlink;
-//    const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.pro;end`;
-//    window.location.href = openMx;
-
-function mx_player(streamlink) {
-    const proPackageName = 'com.mxtech.videoplayer.pro';
-    const freePackageName = 'com.mxtech.videoplayer.ad';
-    
-    // Create a hidden iframe to attempt to load the intent
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
-
-    // Attempt to open the pro version
-    const openMxPro = `intent:${streamlink}#Intent;package=${proPackageName};end`;
-    iframe.src = openMxPro;
-
-    // Set a timeout to check if the pro version failed to open
-    setTimeout(() => {
-        // If the pro version failed to open, attempt to open the free version
-        const openMxFree = `intent:${streamlink}#Intent;package=${freePackageName};end`;
-        iframe.src = openMxFree;
-
-        // Clean up by removing the iframe after use
-        setTimeout(() => {
-            document.body.removeChild(iframe);
-        }, 500);
-    }, 2000); // Adjust the timeout duration as needed
+function mx_player() {
+    const openstreamlink = streamlink;
+    const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.pro;end`;
+    window.location.href = openMx;
 }
+
 function playit_player() {
     const openstreamlink = streamlink;
     const openPlayit = `playit://playerv2/video?url=${openstreamlink}`;

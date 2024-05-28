@@ -41,11 +41,11 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 
 ```sh
 git clone https://github.com/Tamilupdates/LinkStreamBot
-cd FileStreamBot
+cd LinkStreamBot
 python3 -m venv ./venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-python3 -m FileStream
+python3 -m LinkStreamBot
 ```
 
 - To stop the whole bot,
@@ -55,7 +55,7 @@ python3 -m FileStream
 ```sh
 sudo apt install tmux -y
 tmux
-python3 -m FileStream
+python3 -m LinkStreamBot
 ```
 - now you can close the VPS and the bot will run on it.
 
@@ -69,7 +69,7 @@ python3 -m FileStream
 
 ```sh
 git clone https://github.com/Tamilupdates/LinkStreamBot
-cd FileStreamBot
+cd LinkStreamBot
 ```
 * Build own Docker image:
 ```sh

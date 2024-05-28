@@ -359,6 +359,11 @@ function vlc_player() {
     window.location.href = openVlc;
 }
 
+// function mx_player() {
+//   const openstreamlink = streamlink;
+//    const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.pro;end`;
+//    window.location.href = openMx;
+
 function mx_player(streamlink) {
     const proPackageName = 'com.mxtech.videoplayer.pro';
     const freePackageName = 'com.mxtech.videoplayer.ad';
@@ -389,13 +394,6 @@ function playit_player() {
     const openPlayit = `playit://playerv2/video?url=${openstreamlink}`;
     window.location.href = openPlayit;
 }
-
-function mx_player() {
-    const openstreamlink = streamlink;
-    const openMx = `intent:${openstreamlink}#Intent;package=com.mxtech.videoplayer.ad;end`;
-    window.location.href = openMx;
-}
-
 
 function streamDownload() {
   const openstreamlink = streamlink;

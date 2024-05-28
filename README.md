@@ -167,6 +167,6 @@ status - To Get Bot Status and Total Users. [ADMIN]
 broadcast - To Broadcast any message to all users of bot. [ADMIN]
 ```
 
-* Channel Support :
+* ### Channel Support :
 
 *Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button.*

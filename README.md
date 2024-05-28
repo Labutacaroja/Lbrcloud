@@ -1,23 +1,17 @@
 <h1 align="center">FileStreamBot</h1>
 <p align="center">
-  <a href="https://github.com/Avipatilpro/FileStreamBot">
-    <img src="https://graph.org/file/80d1f94e81bbc1acadb36.jpg" alt="Cover Image" width="550">
+  <a href="https://github.com/Tamilupdates/LinkStreamBot">
+    <img src="https://graph.org/file/aa0e6c23acf7660d01364.jpg" alt="Cover Image" width="550">
   </a>
 </p>  
   <p align="center">
    </strong></a>
-    <br><b>
-    <a href="https://github.com/Avipatilpro/FileStreamBot/issues">Report a Bug</a>
-    |
-    <a href="https://github.com/Avipatilpro/FileStreamBot/issues">Request Feature</a></b>
-  </p>
 
 
-
-### 🍁 About :
+### About :
 
 <p align="center">
-    <a href="https://github.com/Avipatilpro/FileStreamBot">
+    <a href="https://github.com/Tamilupdates/LinkStreamBot">
         <img src="https://i.ibb.co/ZJzJ9Hq/link-3x.png" height="100" width="100" alt="FileStreamBot Logo">
     </a>
 </p>
@@ -26,11 +20,11 @@
 </p>
 
 
-### ♢ How to Deploy :
+### How to Deploy :
 
 <i>Either you could locally host, VPS, or deploy on [Heroku](https://heroku.com)</i>
 
-#### ♢ Click on This Drop-down and get more details
+#### Click on This Drop-down and get more details
 
 
 ### Deploy on Heroku
@@ -166,15 +160,15 @@ PORT = 8080
 #### ‍☠️ Bot Commands :
 
 ```sh
-/start      : To check the bot is alive or not.
-/help       : To Get Help Message.
-/about      : To check About the Bot.
-/files      : To Get All Files List of User.
-/del        : To Delete Files from DB with FileID. [ADMIN]
-/ban        : To Ban Any Channel or User to use bot. [ADMIN]
-/unban      : To Unban Any Channel or User to use bot. [ADMIN]
-/status     : To Get Bot Status and Total Users. [ADMIN]
-/broadcast  : To Broadcast any message to all users of bot. [ADMIN]
+start - To check the bot is alive or not.
+help  - To Get Help Message.
+about - To check About the Bot.
+files - To Get All Files List of User.
+del   - To Delete Files from DB with FileID. [ADMIN]
+ban   - To Ban Any Channel or User to use bot. [ADMIN]
+unban - To Unban Any Channel or User to use bot. [ADMIN]
+status - To Get Bot Status and Total Users. [ADMIN]
+broadcast - To Broadcast any message to all users of bot. [ADMIN]
 ```
 
 #### 🍟 Channel Support :
@@ -182,16 +176,4 @@ PORT = 8080
 *Bot also Supported with Channels. Just add bot Channel as Admin. If any new file comes in Channel it will edit it with **Get Download Link** Button.*
 
 </details>
-
-### ❤️ Thanks To :
-
-- [**Me**](https://github.com/AvishkarPatil) : Owner of This FileStreamBot
-- [**Deekshith SH**](https://github.com/DeekshithSH) : for some modules.
-- [**EverythingSuckz**](https://github.com/EverythingSuckz) : for his [FileStreamBot](https://github.com/EverythingSuckz/FileStreamBot)
-- [**Biisal**](https://github.com/biisal) : for Stream Page UI
-
----
-<h4 align='center'>© 2024 Aνιѕнкαя Pαтιℓ</h4>
-
-
 

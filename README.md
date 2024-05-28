@@ -65,7 +65,7 @@ python3 -m FileStream
   <summary><b>Deploy using Docker :</b></summary>
 <br>
 
-** Clone the repository:
+* Clone the repository:
 
 ```sh
 git clone https://github.com/Tamilupdates/LinkStreamBot

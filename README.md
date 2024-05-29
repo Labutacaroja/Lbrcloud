@@ -8,28 +8,19 @@
    </strong></a>
 
 
-### About :
-
-<p align="center">
-    <a href="https://github.com/Tamilupdates/LinkStreamBot">
-        <img src="https://i.ibb.co/ZJzJ9Hq/link-3x.png" height="100" width="100" alt="FileStreamBot Logo">
-    </a>
-</p>
 <p align='center'>
   This bot provides stream links for Telegram files without the necessity of waiting for the download to complete, offering the ability to store files.
 </p>
 
 
+### Deploy on Heroku
+
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/LinkStreamBot)
+
+
 ### How to Deploy :
 
 <i>Either you could locally host, VPS, or deploy on [Heroku](https://heroku.com)</i>
-
-
-### Deploy on Heroku
-
-Press the below button to fast deploy to Heroku
-
-- [![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/LinkStreamBot)
 
 then goto the <a href="#mandatory-vars">variables tab</a> for more info on setting up environmental variables.
 

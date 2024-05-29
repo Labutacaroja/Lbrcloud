@@ -7,7 +7,6 @@
         "stream"
     ],
   "repository": "https://github.com/Tamilupdates/LinkStreamBot",
-  "success_url": "/",
   "logo": "https://i.ibb.co/ZJzJ9Hq/link-3x.png",
   "env": {
       "CONFIG_FILE_URL": {

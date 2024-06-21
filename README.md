@@ -1,4 +1,4 @@
-<h1 align="center">FileStreamBot</h1>
+<h1 align="center">Stream-Bot</h1>
 <p align="center">
   <a href="https://github.com/Tamilupdates/Stream-Bot">
     <img src="https://graph.org/file/aa0e6c23acf7660d01364.jpg" alt="Cover Image" width="550">

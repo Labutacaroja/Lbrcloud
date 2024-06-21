@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 logging.basicConfig(level=logging.ERROR)
 LOGGER = logging.getLogger(__name__)
 
-CONFIG_FILE_URL = os.environ.get('CONFIG_FILE_URL')
+CONFIG_FILE_URL = os.env.get('CONFIG_FILE_URL')
 try:
     if not CONFIG_FILE_URL:
         raise ValueError("CONFIG_FILE_URL is missing or empty")

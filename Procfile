@@ -1,1 +1,1 @@
-web: python3 get_config.py && python -m FileStream
+web: python -m FileStream

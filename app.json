@@ -6,7 +6,7 @@
         "files",
         "stream"
     ],
-  "repository": "https://github.com/Tamilupdates/LinkStreamBot",
+  "repository": "https://github.com/Tamilupdates/Stream-Bot",
   "logo": "https://i.ibb.co/ZJzJ9Hq/link-3x.png",
   "env": {
       "CONFIG_FILE_URL": {

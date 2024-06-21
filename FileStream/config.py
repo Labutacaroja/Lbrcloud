@@ -1,6 +1,6 @@
-from requests import get as rget
-import os
 import logging
+from requests import get as rget
+from os import environ as env
 from dotenv import load_dotenv
 
 logging.basicConfig(level=logging.ERROR)

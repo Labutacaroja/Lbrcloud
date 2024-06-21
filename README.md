@@ -1,6 +1,6 @@
 <h1 align="center">FileStreamBot</h1>
 <p align="center">
-  <a href="https://github.com/Tamilupdates/LinkStreamBot">
+  <a href="https://github.com/Tamilupdates/Stream-Bot">
     <img src="https://graph.org/file/aa0e6c23acf7660d01364.jpg" alt="Cover Image" width="550">
   </a>
 </p>  
@@ -15,7 +15,7 @@
 
 ### Deploy on Heroku
 
-[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/LinkStreamBot)
+[![Deploy To Heroku](https://www.herokucdn.com/deploy/button.svg)](https://dashboard.heroku.com/new?template=https://github.com/Tamilupdates/Stream-Bot)
 
 
 ### How to Deploy :
@@ -29,12 +29,12 @@ then goto the <a href="#mandatory-vars">variables tab</a> for more info on setti
 <br>
 
 ```sh
-git clone https://github.com/Tamilupdates/LinkStreamBot
-cd LinkStreamBot
+git clone https://github.com/Tamilupdates/Stream-Bot
+cd Stream-Bot
 python3 -m venv ./venv
 . ./venv/bin/activate
 pip install -r requirements.txt
-python3 -m LinkStreamBot
+python3 -m Stream-Bot
 ```
 
 - To stop the whole bot,
@@ -44,7 +44,7 @@ python3 -m LinkStreamBot
 ```sh
 sudo apt install tmux -y
 tmux
-python3 -m LinkStreamBot
+python3 -m Stream-Bot
 ```
 - now you can close the VPS and the bot will run on it.
 
@@ -57,8 +57,8 @@ python3 -m LinkStreamBot
 * Clone the repository:
 
 ```sh
-git clone https://github.com/Tamilupdates/LinkStreamBot
-cd LinkStreamBot
+git clone https://github.com/Tamilupdates/Stream-Bot
+cd Stream-Bot
 ```
 * Build own Docker image:
 ```sh
